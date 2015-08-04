@@ -1,0 +1,4 @@
+D:\Proyectos\SistemaRRHH\BAL\bin\Release\BAL.dll
+D:\Proyectos\SistemaRRHH\BAL\bin\Release\BAL.pdb
+D:\Proyectos\SistemaRRHH\BAL\obj\Release\BAL.dll
+D:\Proyectos\SistemaRRHH\BAL\obj\Release\BAL.pdb

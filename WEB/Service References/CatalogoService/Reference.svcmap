@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ffaceda6-53d3-4ae4-96e5-3878a5f04b0f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.142.6.55:7075/SistemaRRHHServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SistemaRRHHServices.xsd" MetadataType="Schema" ID="bf9b1d4e-5b91-49a0-96f4-7b70c329de34" SourceId="1" SourceUrl="http://10.142.6.55:7075/SistemaRRHHServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="SistemaRRHHServices1.xsd" MetadataType="Schema" ID="39e1b777-85c3-444f-a066-a4223ad4b39a" SourceId="1" SourceUrl="http://10.142.6.55:7075/SistemaRRHHServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="SistemaRRHHServices.disco" MetadataType="Disco" ID="81c48add-ad91-459b-a03f-2da80ad6288c" SourceId="1" SourceUrl="http://10.142.6.55:7075/SistemaRRHHServices.svc?disco" />
+    <MetadataFile FileName="SistemaRRHHServices2.xsd" MetadataType="Schema" ID="e25d6c39-9367-4b2b-a58f-4a580e0f5d5b" SourceId="1" SourceUrl="http://10.142.6.55:7075/SistemaRRHHServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="SistemaRRHHServices.wsdl" MetadataType="Wsdl" ID="1664a18f-fffb-46f1-b0f9-b0c937e73c14" SourceId="1" SourceUrl="http://10.142.6.55:7075/SistemaRRHHServices.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

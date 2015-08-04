@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98439BD7-7354-47C6-BCF4-8D2D28198BF2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WEB</RootNamespace>
+    <AssemblyName>WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.7.1213\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\packages\AjaxMin.4.97.4951.28483\lib\net40\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="AztecaClientV2">
+      <HintPath>..\..\..\Compartido\AztecaClientV2.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\packages\WindowsAzure.Storage.2.1.0.3\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="NotAClue.Web.BootstrapFriendlyControlAdapters">
+      <HintPath>..\packages\BootstrapFriendlyControlAdaptorsPackage.0.1.1\lib\NotAClue.Web.BootstrapFriendlyControlAdapters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Spatial">
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-responsive.css" />
+    <Content Include="Content\bootstrap-responsive.min.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Estilos.css" />
+    <Content Include="Content\images\glyphicons-halflings-white.png" />
+    <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Images\Icons\arrow-circle-bottom-2x.png" />
+    <Content Include="Images\Icons\arrow-circle-left-2x.png" />
+    <Content Include="Images\Icons\arrow-circle-right-2x.png" />
+    <Content Include="Images\Icons\arrow-circle-top-2x.png" />
+    <Content Include="Images\Icons\calendar-2x.png" />
+    <Content Include="Images\Icons\check-2x.png" />
+    <Content Include="Images\Icons\chevron-bottom-2x.png" />
+    <Content Include="Images\Icons\chevron-left-2x.png" />
+    <Content Include="Images\Icons\chevron-right-2x.png" />
+    <Content Include="Images\Icons\circle-check-2x.png" />
+    <Content Include="Images\Icons\circle-x-2x.png" />
+    <Content Include="Images\Icons\data-transfer-download-2x.png" />
+    <Content Include="Images\Icons\data-transfer-upload-2x.png" />
+    <Content Include="Images\Icons\envelope-closed-2x.png" />
+    <Content Include="Images\Icons\loop-circular-2x.png" />
+    <Content Include="Images\Icons\magnifying-glass-2x.png" />
+    <Content Include="Images\Icons\plus-2x.png" />
+    <Content Include="Images\Icons\reload-2x.png" />
+    <Content Include="Images\Icons\trash-2x.png" />
+    <Content Include="Images\Icons\x-2x.png" />
+    <Content Include="Images\Loaders\image_717505.gif" />
+    <Content Include="Images\Loaders\image_717506.gif" />
+    <Content Include="Images\Loaders\image_717507.gif" />
+    <Content Include="Images\Loaders\image_717508.gif" />
+    <Content Include="Images\Loaders\image_717509.gif" />
+    <Content Include="Images\Loaders\image_717510.gif" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\calendar.png" />
+    <Content Include="Images\calendar32.png" />
+    <Content Include="Images\Sin_foto.png" />
+    <Content Include="Pages\ConsultaEmpleadosRRHH.aspx" />
+    <Content Include="Pages\ConsultaEmpleados.aspx" />
+    <Content Include="Pages\EditarHojaDeVida.aspx" />
+    <Content Include="Pages\DetalleHojaDeVida.aspx" />
+    <Content Include="Pages\Logout.aspx" />
+    <Content Include="Pages\Main.aspx" />
+    <Content Include="Pages\MiHojaDeVida.aspx" />
+    <Content Include="Pages\VerHojaDeVida.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="App_Browsers\BootstrapFreindlyControlAdaptors.browser" />
+    <None Include="Properties\DataSources\BAL.Catalogo.datasource" />
+    <None Include="Properties\DataSources\BAL.Empleado.datasource" />
+    <None Include="Properties\DataSources\BAL.ExperienciaLaboral.datasource" />
+    <None Include="Properties\DataSources\BAL.FormacionAcademica.datasource" />
+    <None Include="Properties\DataSources\BAL.InformacionFamiliar.datasource" />
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Service References\CatalogoService\configuration91.svcinfo" />
+    <None Include="Service References\CatalogoService\configuration.svcinfo" />
+    <None Include="Service References\CatalogoService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CatalogoService\SistemaRRHHServices.wsdl" />
+    <None Include="Service References\CatalogoService\SistemaRRHHServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogoService\SistemaRRHHServices1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CatalogoService\SistemaRRHHServices2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmpleadoService\configuration91.svcinfo" />
+    <None Include="Service References\EmpleadoService\configuration.svcinfo" />
+    <None Include="Service References\EmpleadoService\EmpleadoService.wsdl" />
+    <None Include="Service References\EmpleadoService\EmpleadoService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmpleadoService\EmpleadoService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmpleadoService\EmpleadoService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\EmpleadoService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Scripts\jquery-1.9.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <None Include="Service References\EmpleadoService\EmpleadoService.disco" />
+    <None Include="Service References\CatalogoService\SistemaRRHHServices.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\EmpleadoService\WEB.EmpleadoService.Empleado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EmpleadoService\WEB.EmpleadoService.ExperienciaLaboral.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EmpleadoService\WEB.EmpleadoService.FormacionAcademica.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\EmpleadoService\WEB.EmpleadoService.InformacionFamiliar.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DateTimeHelper.cs" />
+    <Compile Include="GridViewPaginado.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Masters\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PageHelper.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ConsultaEmpleadosRRHH.aspx.cs">
+      <DependentUpon>ConsultaEmpleadosRRHH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ConsultaEmpleadosRRHH.aspx.designer.cs">
+      <DependentUpon>ConsultaEmpleadosRRHH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ConsultaEmpleados.aspx.cs">
+      <DependentUpon>ConsultaEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ConsultaEmpleados.aspx.designer.cs">
+      <DependentUpon>ConsultaEmpleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditarHojaDeVida.aspx.cs">
+      <DependentUpon>EditarHojaDeVida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EditarHojaDeVida.aspx.designer.cs">
+      <DependentUpon>EditarHojaDeVida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DetalleHojaDeVida.aspx.cs">
+      <DependentUpon>DetalleHojaDeVida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DetalleHojaDeVida.aspx.designer.cs">
+      <DependentUpon>DetalleHojaDeVida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MiHojaDeVida.aspx.cs">
+      <DependentUpon>MiHojaDeVida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MiHojaDeVida.aspx.designer.cs">
+      <DependentUpon>MiHojaDeVida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\VerHojaDeVida.aspx.cs">
+      <DependentUpon>VerHojaDeVida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\VerHojaDeVida.aspx.designer.cs">
+      <DependentUpon>VerHojaDeVida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pages\ResponseLogin.cs" />
+    <Compile Include="Service References\CatalogoService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\EmpleadoService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\bootstrap-theme.css.map" />
+    <None Include="Content\bootstrap.css.map" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Masters\Main.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CatalogoService\" />
+    <WCFMetadataStorage Include="Service References\EmpleadoService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj">
+      <Project>{2131DA2A-139D-4417-8E8B-73758403AF81}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{BBE05435-A3BE-48A7-A157-2C203D717D99}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>10</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+D:\Proyectos\SistemaRRHH\WCF\bin\WCF.dll
+D:\Proyectos\SistemaRRHH\WCF\bin\WCF.pdb
+D:\Proyectos\SistemaRRHH\WCF\bin\BAL.dll
+D:\Proyectos\SistemaRRHH\WCF\bin\DAL.dll
+D:\Proyectos\SistemaRRHH\WCF\bin\BAL.pdb
+D:\Proyectos\SistemaRRHH\WCF\bin\DAL.pdb
+D:\Proyectos\SistemaRRHH\WCF\obj\Release\WCF.csprojResolveAssemblyReference.cache
+D:\Proyectos\SistemaRRHH\WCF\obj\Release\WCF.dll
+D:\Proyectos\SistemaRRHH\WCF\obj\Release\WCF.pdb

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL", "BAL\BAL.csproj", "{2131DA2A-139D-4417-8E8B-73758403AF81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{BBE05435-A3BE-48A7-A157-2C203D717D99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF", "WCF\WCF.csproj", "{E7059365-7FEF-46EA-A765-E2691969E407}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB", "WEB\WEB.csproj", "{98439BD7-7354-47C6-BCF4-8D2D28198BF2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2131DA2A-139D-4417-8E8B-73758403AF81} = {2131DA2A-139D-4417-8E8B-73758403AF81}
+		{BBE05435-A3BE-48A7-A157-2C203D717D99} = {BBE05435-A3BE-48A7-A157-2C203D717D99}
+		{E7059365-7FEF-46EA-A765-E2691969E407} = {E7059365-7FEF-46EA-A765-E2691969E407}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BAL\\BAL.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = BAL\\
+		SccProjectUniqueName2 = DAL\\DAL.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = DAL\\
+		SccProjectUniqueName3 = WCF\\WCF.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = WCF\\
+		SccProjectUniqueName4 = WEB\\WEB.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = WEB\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2131DA2A-139D-4417-8E8B-73758403AF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2131DA2A-139D-4417-8E8B-73758403AF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2131DA2A-139D-4417-8E8B-73758403AF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2131DA2A-139D-4417-8E8B-73758403AF81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE05435-A3BE-48A7-A157-2C203D717D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE05435-A3BE-48A7-A157-2C203D717D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE05435-A3BE-48A7-A157-2C203D717D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE05435-A3BE-48A7-A157-2C203D717D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7059365-7FEF-46EA-A765-E2691969E407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7059365-7FEF-46EA-A765-E2691969E407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7059365-7FEF-46EA-A765-E2691969E407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7059365-7FEF-46EA-A765-E2691969E407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98439BD7-7354-47C6-BCF4-8D2D28198BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98439BD7-7354-47C6-BCF4-8D2D28198BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98439BD7-7354-47C6-BCF4-8D2D28198BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98439BD7-7354-47C6-BCF4-8D2D28198BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="22848fc1-f563-4e72-8409-23bbe5b53155" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+      <CollectionMapping TypeName="System.Collections.SortedList" Category="Dictionary" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.142.6.55:7075/EmpleadoService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EmpleadoService.xsd" MetadataType="Schema" ID="34f087ba-1d1b-4042-9631-94f33cb427c4" SourceId="1" SourceUrl="http://10.142.6.55:7075/EmpleadoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EmpleadoService1.xsd" MetadataType="Schema" ID="ed04bedf-5f6a-422f-a143-73ef608b4167" SourceId="1" SourceUrl="http://10.142.6.55:7075/EmpleadoService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EmpleadoService.wsdl" MetadataType="Wsdl" ID="5fb2ceb5-b6e8-4bf5-aea6-3111b7ff82c6" SourceId="1" SourceUrl="http://10.142.6.55:7075/EmpleadoService.svc?wsdl" />
+    <MetadataFile FileName="EmpleadoService2.xsd" MetadataType="Schema" ID="d6dbddf5-a5af-4137-b757-acb945b81db3" SourceId="1" SourceUrl="http://10.142.6.55:7075/EmpleadoService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EmpleadoService.disco" MetadataType="Disco" ID="9d983779-f484-4ceb-9654-ce0248537c5b" SourceId="1" SourceUrl="http://10.142.6.55:7075/EmpleadoService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

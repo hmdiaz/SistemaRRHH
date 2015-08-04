@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://10.142.6.55:7075/EmpleadoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BAL" />
+  <xs:element name="ObtenerEmpleadoByUsuarioID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEmpleadoByUsuarioIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BAL" minOccurs="0" name="ObtenerEmpleadoByUsuarioIDResult" nillable="true" type="q1:ArrayOfEmpleado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarInformacionUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioID" type="xs:int" />
+        <xs:element minOccurs="0" name="PrimerNombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SegundoNombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TipoDocumentoID" type="xs:int" />
+        <xs:element minOccurs="0" name="Documento" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CargoID" type="xs:int" />
+        <xs:element minOccurs="0" name="FechaNacimiento" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="DireccionResidencia" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Barrio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TelefonoFijo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CelularPersonal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CelularCorporativo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CorreoPersonal" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CorreoCorporativo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="GrupoSanguineo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EstadoCivil" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MunicipioID" type="xs:int" />
+        <xs:element minOccurs="0" name="SedeID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActualizarInformacionUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActualizarInformacionUsuarioResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerInformacionFamiliarEmpleadoByUsuarioID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerInformacionFamiliarEmpleadoByUsuarioIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BAL" minOccurs="0" name="ObtenerInformacionFamiliarEmpleadoByUsuarioIDResult" nillable="true" type="q2:ArrayOfInformacionFamiliar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerExperienciaLaboralEmpleadoByUsuarioID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerExperienciaLaboralEmpleadoByUsuarioIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BAL" minOccurs="0" name="ObtenerExperienciaLaboralEmpleadoByUsuarioIDResult" nillable="true" type="q3:ArrayOfExperienciaLaboral" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarInformacionFamiliar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmpleadoID" type="xs:int" />
+        <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Apellidos" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Ocupacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaNacimiento" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="ParentescoID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarInformacionFamiliarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuardarInformacionFamiliarResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerFormacionAcademicaEmpleadoByUsuarioID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerFormacionAcademicaEmpleadoByUsuarioIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BAL" minOccurs="0" name="ObtenerFormacionAcademicaEmpleadoByUsuarioIDResult" nillable="true" type="q4:ArrayOfFormacionAcademica" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarInformacionAcademica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmpleadoID" type="xs:int" />
+        <xs:element minOccurs="0" name="Institucion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TituloObtenido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NivelFormacionID" type="xs:int" />
+        <xs:element minOccurs="0" name="FechaInicio" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="FechaFinalizacion" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="MunicipioID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarInformacionAcademicaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuardarInformacionAcademicaResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarExperienciaLaboral">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmpleadoID" type="xs:int" />
+        <xs:element minOccurs="0" name="Empresa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SectorID" type="xs:int" />
+        <xs:element minOccurs="0" name="AreaTrabajoID" type="xs:int" />
+        <xs:element minOccurs="0" name="Cargo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FechaIngreso" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="FechaRetiro" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Funciones" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MunicipioID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarExperienciaLaboralResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GuardarExperienciaLaboralResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEmpleados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NoPagina" type="xs:int" />
+        <xs:element minOccurs="0" name="NoRegistros" type="xs:int" />
+        <xs:element minOccurs="0" name="Login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumeroEmpleado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cedula" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AreaID" type="xs:int" />
+        <xs:element minOccurs="0" name="CargoID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEmpleadosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BAL" minOccurs="0" name="ObtenerEmpleadosResult" nillable="true" type="q5:ArrayOfEmpleado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarInformacionFamiliarEmpleadoByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InformacionFamiliarID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarInformacionFamiliarEmpleadoByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EliminarInformacionFamiliarEmpleadoByIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarFormacionAcademicaEmpleadoByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FormacionAcademicaID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarFormacionAcademicaEmpleadoByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EliminarFormacionAcademicaEmpleadoByIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarExperienciaLaboralEmpleadoByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExperienciaLaboralID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EliminarExperienciaLaboralEmpleadoByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EliminarExperienciaLaboralEmpleadoByIDResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

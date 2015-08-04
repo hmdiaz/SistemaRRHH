@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EmpleadoService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://10.142.6.55:7075/EmpleadoService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://10.142.6.55:7075/EmpleadoService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://10.142.6.55:7075/EmpleadoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BAL" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEmpleadoService_ObtenerEmpleadoByUsuarioID_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEmpleadoByUsuarioID" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_ObtenerEmpleadoByUsuarioID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEmpleadoByUsuarioIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_ActualizarInformacionUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarInformacionUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_ActualizarInformacionUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarInformacionUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_ObtenerInformacionFamiliarEmpleadoByUsuarioID_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerInformacionFamiliarEmpleadoByUsuarioID" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_ObtenerInformacionFamiliarEmpleadoByUsuarioID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerInformacionFamiliarEmpleadoByUsuarioIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_ObtenerExperienciaLaboralEmpleadoByUsuarioID_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerExperienciaLaboralEmpleadoByUsuarioID" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_ObtenerExperienciaLaboralEmpleadoByUsuarioID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerExperienciaLaboralEmpleadoByUsuarioIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_GuardarInformacionFamiliar_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarInformacionFamiliar" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_GuardarInformacionFamiliar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarInformacionFamiliarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_ObtenerFormacionAcademicaEmpleadoByUsuarioID_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFormacionAcademicaEmpleadoByUsuarioID" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_ObtenerFormacionAcademicaEmpleadoByUsuarioID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFormacionAcademicaEmpleadoByUsuarioIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_GuardarInformacionAcademica_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarInformacionAcademica" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_GuardarInformacionAcademica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarInformacionAcademicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_GuardarExperienciaLaboral_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarExperienciaLaboral" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_GuardarExperienciaLaboral_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuardarExperienciaLaboralResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_ObtenerEmpleados_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEmpleados" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_ObtenerEmpleados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEmpleadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_EliminarInformacionFamiliarEmpleadoByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarInformacionFamiliarEmpleadoByID" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_EliminarInformacionFamiliarEmpleadoByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarInformacionFamiliarEmpleadoByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_EliminarFormacionAcademicaEmpleadoByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarFormacionAcademicaEmpleadoByID" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_EliminarFormacionAcademicaEmpleadoByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarFormacionAcademicaEmpleadoByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_EliminarExperienciaLaboralEmpleadoByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarExperienciaLaboralEmpleadoByID" />
+  </wsdl:message>
+  <wsdl:message name="IEmpleadoService_EliminarExperienciaLaboralEmpleadoByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarExperienciaLaboralEmpleadoByIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEmpleadoService">
+    <wsdl:operation name="ObtenerEmpleadoByUsuarioID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoService/ObtenerEmpleadoByUsuarioID" message="tns:IEmpleadoService_ObtenerEmpleadoByUsuarioID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoService/ObtenerEmpleadoByUsuarioIDResponse" message="tns:IEmpleadoService_ObtenerEmpleadoByUsuarioID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarInformacionUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoService/ActualizarInformacionUsuario" message="tns:IEmpleadoService_ActualizarInformacionUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoService/ActualizarInformacionUsuarioResponse" message="tns:IEmpleadoService_ActualizarInformacionUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerInformacionFamiliarEmpleadoByUsuarioID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoService/ObtenerInformacionFamiliarEmpleadoByUsuarioID" message="tns:IEmpleadoService_ObtenerInformacionFamiliarEmpleadoByUsuarioID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoService/ObtenerInformacionFamiliarEmpleadoByUsuarioIDResponse" message="tns:IEmpleadoService_ObtenerInformacionFamiliarEmpleadoByUsuarioID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerExperienciaLaboralEmpleadoByUsuarioID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoService/ObtenerExperienciaLaboralEmpleadoByUsuarioID" message="tns:IEmpleadoService_ObtenerExperienciaLaboralEmpleadoByUsuarioID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoService/ObtenerExperienciaLaboralEmpleadoByUsuarioIDResponse" message="tns:IEmpleadoService_ObtenerExperienciaLaboralEmpleadoByUsuarioID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarInformacionFamiliar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoService/GuardarInformacionFamiliar" message="tns:IEmpleadoService_GuardarInformacionFamiliar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoService/GuardarInformacionFamiliarResponse" message="tns:IEmpleadoService_GuardarInformacionFamiliar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFormacionAcademicaEmpleadoByUsuarioID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoService/ObtenerFormacionAcademicaEmpleadoByUsuarioID" message="tns:IEmpleadoService_ObtenerFormacionAcademicaEmpleadoByUsuarioID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoService/ObtenerFormacionAcademicaEmpleadoByUsuarioIDResponse" message="tns:IEmpleadoService_ObtenerFormacionAcademicaEmpleadoByUsuarioID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarInformacionAcademica">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoService/GuardarInformacionAcademica" message="tns:IEmpleadoService_GuardarInformacionAcademica_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoService/GuardarInformacionAcademicaResponse" message="tns:IEmpleadoService_GuardarInformacionAcademica_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuardarExperienciaLaboral">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoService/GuardarExperienciaLaboral" message="tns:IEmpleadoService_GuardarExperienciaLaboral_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoService/GuardarExperienciaLaboralResponse" message="tns:IEmpleadoService_GuardarExperienciaLaboral_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEmpleados">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoService/ObtenerEmpleados" message="tns:IEmpleadoService_ObtenerEmpleados_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoService/ObtenerEmpleadosResponse" message="tns:IEmpleadoService_ObtenerEmpleados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarInformacionFamiliarEmpleadoByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoService/EliminarInformacionFamiliarEmpleadoByID" message="tns:IEmpleadoService_EliminarInformacionFamiliarEmpleadoByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoService/EliminarInformacionFamiliarEmpleadoByIDResponse" message="tns:IEmpleadoService_EliminarInformacionFamiliarEmpleadoByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFormacionAcademicaEmpleadoByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoService/EliminarFormacionAcademicaEmpleadoByID" message="tns:IEmpleadoService_EliminarFormacionAcademicaEmpleadoByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoService/EliminarFormacionAcademicaEmpleadoByIDResponse" message="tns:IEmpleadoService_EliminarFormacionAcademicaEmpleadoByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarExperienciaLaboralEmpleadoByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEmpleadoService/EliminarExperienciaLaboralEmpleadoByID" message="tns:IEmpleadoService_EliminarExperienciaLaboralEmpleadoByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEmpleadoService/EliminarExperienciaLaboralEmpleadoByIDResponse" message="tns:IEmpleadoService_EliminarExperienciaLaboralEmpleadoByID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IEmpleadoService" type="tns:IEmpleadoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenerEmpleadoByUsuarioID">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoService/ObtenerEmpleadoByUsuarioID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarInformacionUsuario">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoService/ActualizarInformacionUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerInformacionFamiliarEmpleadoByUsuarioID">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoService/ObtenerInformacionFamiliarEmpleadoByUsuarioID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerExperienciaLaboralEmpleadoByUsuarioID">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoService/ObtenerExperienciaLaboralEmpleadoByUsuarioID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarInformacionFamiliar">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoService/GuardarInformacionFamiliar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFormacionAcademicaEmpleadoByUsuarioID">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoService/ObtenerFormacionAcademicaEmpleadoByUsuarioID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarInformacionAcademica">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoService/GuardarInformacionAcademica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuardarExperienciaLaboral">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoService/GuardarExperienciaLaboral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEmpleados">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoService/ObtenerEmpleados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarInformacionFamiliarEmpleadoByID">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoService/EliminarInformacionFamiliarEmpleadoByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFormacionAcademicaEmpleadoByID">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoService/EliminarFormacionAcademicaEmpleadoByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarExperienciaLaboralEmpleadoByID">
+      <soap:operation soapAction="http://tempuri.org/IEmpleadoService/EliminarExperienciaLaboralEmpleadoByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmpleadoService">
+    <wsdl:port name="BasicHttpBinding_IEmpleadoService" binding="tns:BasicHttpBinding_IEmpleadoService">
+      <soap:address location="http://10.142.6.55:7075/EmpleadoService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

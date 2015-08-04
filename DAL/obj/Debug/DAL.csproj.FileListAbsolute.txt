@@ -1,0 +1,7 @@
+D:\Proyectos\SistemaRRHH\DAL\bin\Debug\DAL.dll
+D:\Proyectos\SistemaRRHH\DAL\bin\Debug\DAL.pdb
+D:\Proyectos\SistemaRRHH\DAL\bin\Debug\BAL.dll
+D:\Proyectos\SistemaRRHH\DAL\bin\Debug\BAL.pdb
+D:\Proyectos\SistemaRRHH\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Proyectos\SistemaRRHH\DAL\obj\Debug\DAL.dll
+D:\Proyectos\SistemaRRHH\DAL\obj\Debug\DAL.pdb

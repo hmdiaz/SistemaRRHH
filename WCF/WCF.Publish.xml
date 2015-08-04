@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Publicaciones\SistemaRRHH\SistemaRRHHWCF" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/WCF.pdb" publishTime="12/15/2014 15:47:46" />
+    <file relUrl="EmpleadoService.svc" publishTime="09/01/2014 16:49:12" />
+    <file relUrl="SistemaRRHHServices.svc" publishTime="08/20/2014 17:07:32" />
+    <file relUrl="Web.config" publishTime="12/15/2014 15:49:00" />
+    <file relUrl="bin/WCF.dll" publishTime="12/15/2014 15:47:46" />
+    <file relUrl="bin/DAL.pdb" publishTime="12/15/2014 15:47:45" />
+    <file relUrl="bin/BAL.dll" publishTime="12/15/2014 15:23:32" />
+    <file relUrl="bin/DAL.dll" publishTime="12/15/2014 15:47:46" />
+    <file relUrl="bin/BAL.pdb" publishTime="12/15/2014 15:23:32" />
+  </publishProfile>
+</publishData>
